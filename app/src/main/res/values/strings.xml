@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Scheduler</string>
+    <string name="add_class">Add class</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="to_2">TO</string>
+    <string name="start_time2">Start Time</string>
+    <string name="end_time2">End Time</string>
+    <string name="class_name">CLASS NAME :</string>
+    <string name="e_g_maths">e.g. Maths</string>
+    <string name="existing_schedule_for_the_chosen_day">EXISTING SCHEDULE FOR THE CHOSEN DAY:</string>
+    <string name="to_3">IN</string>
+    <string name="on_off">on_off</string>
+    <string name="choose_start_time">Start  Time</string>
+    <string name="day_of_the_week">Day Of The Week :</string>
+    <string name="enter_class_details">ENTER CLASS DETAILS:</string>
+    <string name="location">CLASS ROOM:</string>
+    <string name="add_class1">ADD CLASS</string>
+    <string name="cancel">CANCEL</string>
+    <string name="batch">BATCH :</string>
+    <string name="view_classes">VIEW CLASSES</string>
+</resources>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Class Reminer Off/On :"
+        android:id="@+id/class_details"
+        android:layout_alignBottom="@+id/enable_disable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/className4"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/class_details"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/className1"
+        android:layout_toEndOf="@+id/className1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Class Name:"
+        android:id="@+id/className1"
+        android:layout_alignTop="@+id/className4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/spinner3"
+        android:layout_toStartOf="@+id/spinner3" />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Start Time"
+
+        android:id="@+id/start_time1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/className1"
+        android:layout_toStartOf="@+id/className4"
+        android:layout_marginTop="32dp"
+        android:layout_toLeftOf="@+id/className4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/time1"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/start_time1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/start_time1"
+        android:layout_toRightOf="@+id/start_time1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="End Time :"
+        android:id="@+id/end_time1"
+        android:layout_below="@+id/start_time1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:layout_toStartOf="@+id/className4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAlignment="center"
+        android:id="@+id/time2"
+        android:layout_alignTop="@+id/end_time1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/end_time1"
+        android:layout_toEndOf="@+id/end_time1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Class Room :"
+        android:id="@+id/classLoc"
+        android:layout_marginTop="33dp"
+        android:layout_below="@+id/time2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/location4"
+        android:layout_alignBottom="@+id/classLoc"
+        android:layout_alignRight="@+id/time2"
+        android:layout_alignEnd="@+id/time2"
+        android:layout_toEndOf="@+id/classLoc"
+        android:layout_toRightOf="@+id/classLoc" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enable_disable"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/cancel1"
+        android:layout_alignTop="@+id/update"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+        android:text="UPDATE"
+        android:id="@+id/update"
+        android:layout_below="@+id/spinner3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        android:id="@+id/delete"
+        android:layout_alignTop="@+id/cancel1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Day:"
+        android:id="@+id/day"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/update"
+        android:layout_alignEnd="@+id/update" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/spinner3"
+        android:layout_alignTop="@+id/day"
+        android:layout_alignLeft="@+id/delete"
+        android:layout_alignStart="@+id/delete"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Batch"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/classLoc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp"
+        android:layout_toLeftOf="@+id/location4"
+        android:layout_toStartOf="@+id/location4" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/batchName4"
+        android:layout_above="@+id/day"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignRight="@+id/location4"
+        android:layout_alignEnd="@+id/location4" />
+
+
+</RelativeLayout>
